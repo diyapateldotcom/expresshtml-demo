@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <head> 
+ </head>
+ <body>
+    <script>
+        var rows=10, cols=10,count=1;
+        document.write("<center><table border='1' width=50%>");
+	    for(var i=1; i<=rows; i++){
+		if(i%2!=0){
+	            document.write("<tr height='65px' bgcolor='aqua'>");
+	             for(var j=1; j<=cols; j++){
+		               if(j%2!=0){
+		               document.write("<td bgcolor='aqua'>"+count+"</td>");
+		               count++;
+		              }
+		            else{
+		               document.write("<td>"+count+"</td>");
+					   count++;
+		               }
+		        }
+		        document.write("</tr>");
+		       }
+		else{
+		     document.write("<tr height='65px'>");
+	             for(var j=1; j<=cols; j++){
+		               if(j%2!=0){
+		               document.write("<td bgcolor='aqua'>"+count+"</td>");
+		               count++;
+		              }
+		            else{
+		               document.write("<td>"+count+"</td>");
+					   count++;
+		               }
+		        }
+		        document.write("</tr>");
+		    }
+		}
+		      document.write("</table></center>");
+			
+    </script>
+	</body>
+</html>
